@@ -345,76 +345,72 @@
 // console.log(res);
 
 // Imtihon 5
-// function getCharCountObj(str) {
-//     return str
-//     .split (" ")
-//     .reduce ((acc, char) => {
-//         if (!acc.some((item) => item.char === char))
-//         {
-//             acc.push ({char , count: 1});
 
-//         }
-//         else{
-//             acc.find ((item) => item.char === char).count ++;
-
-//         }
-//         return acc;
-//     }, [])
-
-//     .reduce ((result, item) => {
-//         result[item.char] = item.count;
-//         return result
-//     } , {});
+// function switchLetters(str) {
+//   let out = "";
+//   for (el of str) {
+//     if (el.codePointAt() >= 65 && el.codePointAt() <= 90) {
+//       out += el.toLowerCase();
+//     } else if (el.codePointAt() >= 97 && el.codePointAt() <= 122) {
+//       out += el.toUpperCase();
+//     } else {
+//       out += " ";
+//     }
+//   }
+//   return out;
 // }
-// let str = "Abdulaziz Programmer"
-// console.log(getCharCountObj(str));
+// let str = "Abdulaziz Programmer";
+// let res = switchLetters(str);
+// console.log(res);
 
 // Imtihon 6
-// function changeObjToString(obj) {
-//     const ObyektQiymatlari = Object.entries(obj);
-//     let natija = []
 
-//     for (let i = 0; i < ObyektQiymatlari.length; i++){
-//         natija = natija.concat(ObyektQiymatlari[i]);
-//     }
-
-//     const stringNatija = natija.join ("");
-
-//     return stringNatija
+// function changeObjToArr(obj) {
+//   return Object.entries(obj).map(([key, value]) => key + value);
 // }
 
-// let obj = {a: 1, b: 2, c: 3}
-// console.log(changeObjToString(obj));
+// const inputObj = { a: 1, b: 2, c: 3, c: 4 };
+// const outputArr = changeObjToArr(inputObj);
 
-// Imtihon 7
-// const products = [
-//   { id: 1, name: 'Bike', price: 100 },
-//   { id: 2, name: 'TV', price: 400 },
-//   { id: 3, name: 'Album', price: 800 },
-//   { id: 4, name: 'Book', price: 600 },
-//   { id: 5, name: 'Phone', price: 500 },
-//   { id: 6, name: 'Computer', price: 1000 },
-//   { id: 7, name: 'Skate', price: 300 },
-//   { id: 8, name: 'Keyboard', price: 200 },
-//   { id: 9, name: 'Bottle', price: 700 },
+// console.log(outputArr);
+
+// function changeObjToArr(obj) {
+//   let result = [];
+//   let out = Object.entries(obj);
+//   for (let [key, value] of out) {
+//      result[key] += value
+//   }
+//   return result;
+// }
+// let obj = { a: 1, b: 2, c: 3 };
+// let res = changeObjToArr(obj);
+// console.log(res);
+
+// Imtihon
+
+// function seperateStudents(students) {
+//   let grant = [];
+//   let contract = [];
+//   for (let el of students) {
+//     el.isGrant === true ? grant.push(el.name) : contract.push(el.name);
+//   }
+//   return {
+//     grant,
+//    contract,
+//   };
+// }
+
+// let students = [
+//   { name: "Jurabek", isGrant: false },
+//   { name: "Elbek", isGrant: true },
+//   { name: "Shamshod", isGrant: false },
+//   { name: "Kamola", isGrant: false },
+//   { name: "Gulnoza", isGrant: true },
+//   { name: "Savlatbek", isGrant: false },
 // ];
 
-// function  deleteProducts(){
-//     const OchiriladiganId = Array.from (arguments);
-
-//     for (let i = products.length - 1; i >= 0; i --)
-//     {
-//         if (
-//             OchiriladiganId.includes(products[i].id)
-//         )
-//         {
-//             products.splice (i, 1);
-//         }
-//     }
-// return products;
-
-// }
-// console.log(deleteProducts(4, 6, 9));
+// let res = seperateStudents(students);
+// console.log(res);
 
 // Imtihon 8
 
