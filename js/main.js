@@ -414,45 +414,42 @@
 
 // Imtihon 8
 
-// const products = [
-//   { id: 1, name: 'Bike', price: 100 },
-//   { id: 2, name: 'TV', price: 400 },
-//   { id: 3, name: 'Album', price: 800 },
-//   { id: 4, name: 'Book', price: 600 },
-//   { id: 5, name: 'Phone', price: 500 },
-//   { id: 6, name: 'Computer', price: 1000 },
-//   { id: 7, name: 'Skate', price: 300 },
-//   { id: 8, name: 'Keyboard', price: 200 },
-//   { id: 9, name: 'Bottle', price: 700 },
-// ];
-
-// function increaseProductPrice(products, id, n) {
-//     for (let i = 0; i < products.length; i ++){
-//         if (products[i].id === id) {
-//             products[i].price += (products[i].price * n) / 100;
-
-//         }
-//     }
-//     return products ;
+// function getTotalPages(books){
+//   mul = 0;
+//   for (let el of books){
+//     mul += el.pages
+//   }
+//   return mul
 // }
-// console.log(increaseProductPrice(products, 6, 20)
-// );
+// const books = [
+//   { name: "The Great Gatsby", pages: 180, isReadFinished: true },
+//   { name: "To Kill a Mockingbird", pages: 336, isReadFinished: false },
+//   { name: "Atom habits", pages: 328, isReadFinished: true },
+//   { name: "Pride and Prejudice", pages: 432, isReadFinished: false },
+//   { name: "The Catcher in the Rye", pages: 224, isReadFinished: true },
+//   { name: "The Hobbit", pages: 310, isReadFinished: false },
+//   { name: "The Lord of the Rings", pages: 1178, isReadFinished: true },
+//   { name: "Harry Potter", pages: 320, isReadFinished: true },
+//   { name: "Fahrenheit 451", pages: 249, isReadFinished: false },
+//   { name: "To the Lighthouse", pages: 209, isReadFinished: true }
+// ];
+// let res = getTotalPages(books)
+// console.log(res);
 
 // Imtihon 9
 
-// function count(str, char) {
-//     let count = 0;
-
-//     for (let i = 0; i <str.length; i ++) {
-//         if (str[i] === char ){
-//             count ++;
-//         }
-//     }
-//     return count;
+// function Getkeys(obj) {
+//   mul = [];
+//   for (let [key, value] of Object.entries(obj)) {
+//     mul.push(key);
+//   }
+//   return mul;
 // }
-// let str = "Abdulaziz Programmer"
-// let char = "a"
-// console.log(count(str, char));
+
+// let obj = { a: 1, b: 2, c: 3 };
+// let res = Getkeys(obj);
+
+// console.log(res);
 
 // Imtihon 10
 // let obj = {
