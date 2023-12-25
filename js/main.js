@@ -1,14 +1,10 @@
-// MISOLLAR PASRODA 
+// MISOLLAR PASRODA
 //MISOLLAR PASRODA
 //MISOLLAR PASRODA
 //240- QATORDAN BOSHLANGAN
 //240- QATORDAN BOSHLANGAN
 //240- QATORDAN BOSHLANGAN
 //240- QATORDAN BOSHLANGAN
-
-
-
-
 
 // let classes = [
 //   "birlar",
@@ -225,44 +221,63 @@
 //   return func()
 // }
 
-
-
 // function factorial(n){
 //   if (n ===1){
 //     return 1;
 //   }
-//   return n * factorial(n-1) 
+//   return n * factorial(n-1)
 // }
 
 // let res = factorial(6)
 // console.log(`1 dan  gacha sonlar kopaytmasi bu:`, res);
 
 // Imtihon 1
-// function getSum(n){
-//     let natija = 0;
-//     for (let i=1; i <= n; i++ ){
-//         natija += i * (n - i + 1);
-//     }
-//     return natija;
+
+// function getSum(n) {
+//   mul1 = 1;
+//   mul2 = 1;
+//   for (i = 1; i <= 2 * n - 1; i += 2) {
+//     mul1 *= i;
+//   }
+//   for (i = 2; i <= 2 * n; i += 2) {
+//     mul2 *= i;
+//   }
+//   return mul1 + mul2;
 // }
- 
-// let n = 4
-// console.log(getSum(n));
+
+// let res = getSum(3);
+// console.log(res);
 
 // Imtihon 2
-// function getLongestWord(arr) {
-//     let engUzunSoz = "";
-//     for  (let i = 0; i < arr.length; i++ ){
-//         if (arr[i].length > engUzunSoz.length){
-//             engUzunSoz = arr [i];
-//         }
+
+// function getHighestNumberOfDigits(arr) {
+//   max = arr[0];
+//   for (el of arr) {;
+//     if (max < el) {
+//       max =el;
 //     }
-//     return engUzunSoz
+//   }
+//   return max;
 // }
 
-// let arr = ["Abdulaziz", "Murod", "Yulduz", "Abdug'affor", "Jamila"];
-// console.log( getLongestWord(arr));
+// let arr = [1589, 31851, 512, 180975, 78, 123456768798];
+// let res = getHighestNumberOfDigits(arr);
+// console.log(res);
 
+// function GetTheLongestWord(arr) {
+
+//   for (let el of arr) {
+//     let Length = el.length;
+//     if (arr[0].length < Length) {
+//       arr[0] = el;
+//     }
+//   }
+//   return arr[0];
+// }
+
+// let arr = ["Abdulaziz", "Murodullajonn", "Yulduz", "Abdug'affor", "tyyyjfgnndfsdfdgfhjgkhjfgdfdvsfd"];
+// let res = GetTheLongestWord(arr);
+// console.log(res);
 
 // Imtihon 3
 // function  getDividers(arr, n) {
@@ -271,13 +286,27 @@
 //     for ( let i = 0; i < arr.length; i++ ){
 //         if (arr[i] % n == 0){
 //             YangiMassiv.push (arr[i]);
-//         } 
+//         }
 //     }
 //     return YangiMassiv
 // }
 
 // console.log(getDividers( [2, 5, 7, 10, 0, 18, 15], 5
 // ));
+
+
+function getStringArr(arr) {
+  let out = arr.reduce((acc, el) => {
+     if (typeof el === 'string') {
+      acc += el;
+    }
+  }, []);
+  return out;
+}
+
+let arr = [1, "Abdulaziz", "Elbek", false, [], "Jurabek", {}];
+let res = getStringArr(arr);
+console.log(res);
 
 // Imtihon 4
 // function  checkWordCapitalize(str) {
@@ -309,10 +338,10 @@
 //         }
 //         return acc;
 //     }, [])
-    
+
 //     .reduce ((result, item) => {
 //         result[item.char] = item.count;
-//         return result 
+//         return result
 //     } , {});
 // }
 // let str = "Abdulaziz Programmer"
@@ -383,14 +412,13 @@
 //     for (let i = 0; i < products.length; i ++){
 //         if (products[i].id === id) {
 //             products[i].price += (products[i].price * n) / 100;
-             
+
 //         }
 //     }
 //     return products ;
 // }
 // console.log(increaseProductPrice(products, 6, 20)
 // );
-
 
 // Imtihon 9
 
@@ -426,6 +454,3 @@
 // }
 
 // console.log(getInverse(obj));
-
-V
-
