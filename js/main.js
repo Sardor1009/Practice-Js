@@ -280,47 +280,69 @@
 // console.log(res);
 
 // Imtihon 3
-// function  getDividers(arr, n) {
-//     let YangiMassiv = [];
 
-//     for ( let i = 0; i < arr.length; i++ ){
-//         if (arr[i] % n == 0){
-//             YangiMassiv.push (arr[i]);
-//         }
+// function getStringArr(arr) {
+//   let out = []
+//   for(let el of arr){
+//     if(typeof el === "string"){
+//       out.push(el);
 //     }
-//     return YangiMassiv
+//   }
+//   return out;
 // }
 
-// console.log(getDividers( [2, 5, 7, 10, 0, 18, 15], 5
-// ));
-
-
-function getStringArr(arr) {
-  let out = arr.reduce((acc, el) => {
-     if (typeof el === 'string') {
-      acc += el;
-    }
-  }, []);
-  return out;
-}
-
-let arr = [1, "Abdulaziz", "Elbek", false, [], "Jurabek", {}];
-let res = getStringArr(arr);
-console.log(res);
+// let arr = [1, "Abdulaziz", "Elbek", false, [], "Jurabek", {}];
+// let res = getStringArr(arr);
+// console.log(res);
 
 // Imtihon 4
-// function  checkWordCapitalize(str) {
-//     const sozlar = str.split (" ");
 
-//     const kattaHarf = sozlar.every ((soz) =>
-//     soz[0] === soz [0].toUpperCase());
-
-//     return kattaHarf;
+// function getPunctuationNumber(str) {
+//   let number = 0;
+//   for (let el of str) {
+//     punctuationSigns.includes(el) ? number++ : number;
+//   }
+//   return number;
 // }
 
-// let str = "Abdulaziz Programmer Is FullStack Developer"
-// console.log(checkWordCapitalize(str)
-// );
+// let str = "Hello! How. are you? I'm doing great. What's new?";
+// const punctuationSigns = [
+//   "!",
+//   '"',
+//   "#",
+//   "$",
+//   "%",
+//   "&",
+//   "'",
+//   "(",
+//   ")",
+//   "*",
+//   "+",
+//   ",",
+//   "-",
+//   ".",
+//   "/",
+//   ":",
+//   ";",
+//   "<",
+//   "=",
+//   ">",
+//   "?",
+//   "@",
+//   "[",
+//   "\\",
+//   "]",
+//   "^",
+//   "_",
+//   "`",
+//   "{",
+//   "|",
+//   "}",
+//   "~",
+//   "'",
+// ];
+// let res = getPunctuationNumber(str);
+// console.log(res);
 
 // Imtihon 5
 // function getCharCountObj(str) {
